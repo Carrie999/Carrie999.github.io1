@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Saintgirl - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Saintgirl - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 18 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>写了三个vscode主题</title>
+      <link>http://localhost:1313/post/vscodetheme/</link>
+      <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/vscodetheme/</guid>
+      <description>1. Dan React Theme https://marketplace.visualstudio.com/items?itemName=Carrie999.dan-react-theme 2. Cyberpunk 2020 https://marketplace.visualstudio.com/items?itemName=Carrie999.cyberpunk-2020 3. IU 2021 https://marketplace.visualstudio.com/items?itemName=Carrie999.iu</description>
+    </item>
+    
+    <item>
+      <title>再一次评价 egoist 的冷暴力行为</title>
+      <link>http://localhost:1313/post/code-man/</link>
+      <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/code-man/</guid>
+      <description>我很难想象一个追女生一年，被拒绝好几次，还依然爱着对方的深情男孩子。 在未来的某一天，碰到一个喜欢暗恋他很久的女孩子，女孩子向他表白了，他的第</description>
+    </item>
+    
+    <item>
+      <title>为啥不去日本</title>
+      <link>http://localhost:1313/post/japan/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/japan/</guid>
+      <description>leader今天问我你是不是也像郭大v那样移民日本，我说没钱。 我是一个很直的人，说到做到的人。 主要是我去了日本也不一定比国内过得舒服。 因为我</description>
+    </item>
+    
+    <item>
+      <title>你无需过于关心他人</title>
+      <link>http://localhost:1313/post/no-need/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/no-need/</guid>
+      <description>他们并不孤单，不要觉得对方孤单，对方孤单会来找你，会表达需求。而不需要你来做些什么，他需要你你就做，不需要就不过度关心。 无论是家人还是朋友都</description>
+    </item>
+    
+    <item>
+      <title>告白与告别</title>
+      <link>http://localhost:1313/post/love-and-goodbye/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/love-and-goodbye/</guid>
+      <description>认识一个人，了解一个人，到最后告别一个人，对我来说真的是一个痛苦的过程。我总是希望自己尽量少地认识人，尽量少地把自己的喜怒哀乐都建立在其他个</description>
+    </item>
+    
+    <item>
+      <title>喜欢一个人真的不是舔</title>
+      <link>http://localhost:1313/post/love-somebody/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/love-somebody/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>我对程序员的看法</title>
+      <link>http://localhost:1313/post/programmer/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/programmer/</guid>
+      <description>程序员最好的工作就是去做开源，尤其是赚钱的开源，是所有程序员最羡慕的。 但是开源程序有个悖论，就是一个开源项目可能被几万人使用，但是写这个项目</description>
+    </item>
+    
+    <item>
+      <title>关于自由职业的那些事儿</title>
+      <link>http://localhost:1313/post/freelancer/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/freelancer/</guid>
+      <description>一个人就是一支队伍，以前看到qq好友的签名，当时还不明白是什么意思。 自由职业远离了公司和群体组织。 似乎每时每刻都是思考生命的意义，生命的价值</description>
+    </item>
+    
+    <item>
+      <title>那是一种很浪漫的单恋</title>
+      <link>http://localhost:1313/post/romantic/</link>
+      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/romantic/</guid>
+      <description>自己因为对方的冷暴力行为做了很多骚操作。 发了100次0.01 的红包，发了100美金红包，屏蔽github 之后再次申请小号sponsor ，申请</description>
+    </item>
+    
+    <item>
+      <title>我做UI设计的那些事儿，为啥从UI设计转行前端</title>
+      <link>http://localhost:1313/post/ui-designer/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/ui-designer/</guid>
+      <description>做UI设计我都换了4家公司，来北京的时候，一直在投简历连面试机会都很少。好不容易有面试机会也是失败。 其实我一直觉得UI设计也没啥，我们的简历</description>
+    </item>
+    
+    <item>
+      <title>致最后的裙友</title>
+      <link>http://localhost:1313/post/last-group-friend/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/last-group-friend/</guid>
+      <description>致裙主 我不能说你是个坏人，每个人内心都有光明和邪恶，一个坐牢杀人犯都在可能在特定场合去救落水的人。你在写代码创建自己的价值，你喜欢你的家人，</description>
+    </item>
+    
+    <item>
+      <title>致渣男</title>
+      <link>http://localhost:1313/post/scumbag/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/scumbag/</guid>
+      <description>如果说渣女是只有利益没有道德的话，那么渣男就是只有色欲没有道德。 如果知道自己的好色，请远离好女孩，你们去搞av的女孩子啊，你去花钱叫🐔啊，非</description>
+    </item>
+    
+    <item>
+      <title>2020总结</title>
+      <link>http://localhost:1313/post/2020/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2020/</guid>
+      <description>虽然都2月份了，看到别人都在总结2020 我也像样的总结一下吧。 整体总结，我比较俗，赚钱吧 关于代码 3月份入职了抖音，其实我就是想挣个钱，从来就</description>
+    </item>
+    
+    <item>
+      <title>关于人生这件事</title>
+      <link>http://localhost:1313/post/life/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/life/</guid>
+      <description>你拥有属于你的时间，你用这些时间可以去享受，去吃喝玩乐，去快乐。也可以用这些时间去做些事情，无论是创造些令自己和他人高兴的东西还是做些什么事</description>
+    </item>
+    
+    <item>
+      <title>有女朋友就是恋爱了吗？或者说没有男朋友就代表没有恋爱吗？</title>
+      <link>http://localhost:1313/post/true-love/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/true-love/</guid>
+      <description>不是的，我依然记得在大学时候，影视老师讲的话，她说，有一对少男少女在路上，结果后面还有一个女孩子，她的目光在看着那个男孩子。真正的爱情啊，管</description>
+    </item>
+    
+    <item>
+      <title>所谓的执着</title>
+      <link>http://localhost:1313/post/persistence/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/persistence/</guid>
+      <description>终于明白了自己的那种所谓的执着，那是深深的植根于童年的记忆。 初次进群的时候，我好羡慕你们可以有人说话啊。无论说什么我真的好羡慕。 在上学的时候</description>
+    </item>
+    
+    <item>
+      <title>关于股票和爱情里的人性</title>
+      <link>http://localhost:1313/post/love-and-stock/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/love-and-stock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>原则</title>
+      <link>http://localhost:1313/post/stock/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/stock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>我为什么不在字节跳动找一个程序员对象？</title>
+      <link>http://localhost:1313/post/why-not/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/why-not/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>我为什么不愿意去上班工作？</title>
+      <link>http://localhost:1313/post/why-not-work/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/why-not-work/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
