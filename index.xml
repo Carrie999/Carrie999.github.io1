@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Saintgirl</title>
-    <link>http://localhost:1313/</link>
+    <link>https://carrie999.github.io/</link>
     <description>Recent content on Saintgirl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Feb 2021 17:58:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://carrie999.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>写了三个vscode主题</title>
-      <link>http://localhost:1313/post/vscodetheme/</link>
+      <title>写了三个 vscode 主题</title>
+      <link>https://carrie999.github.io/post/vscode-theme/</link>
       <pubDate>Thu, 18 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/vscodetheme/</guid>
+      <guid>https://carrie999.github.io/post/vscode-theme/</guid>
       
         <description>&lt;h1 id=&#34;1-dan-react-theme&#34;&gt;1. Dan React Theme&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=Carrie999.dan-react-theme&#34;&gt;https://marketplace.visualstudio.com/items?itemName=Carrie999.dan-react-theme&lt;/a&gt;&lt;/p&gt;
@@ -24,16 +24,17 @@
 &lt;p&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=Carrie999.cyberpunk-2020&#34;&gt;https://marketplace.visualstudio.com/items?itemName=Carrie999.cyberpunk-2020&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;3-iu-2021&#34;&gt;3. IU 2021&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=Carrie999.iu&#34;&gt;https://marketplace.visualstudio.com/items?itemName=Carrie999.iu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bytedance.feishu.cn/docs/doccnVJ64ah4D4m9fjL9eNpS8Vc&#34;&gt;Vscode 自定义主题&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
     
     <item>
       <title>再一次评价 egoist 的冷暴力行为</title>
-      <link>http://localhost:1313/post/code-man/</link>
+      <link>https://carrie999.github.io/post/code-man/</link>
       <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/code-man/</guid>
+      <guid>https://carrie999.github.io/post/code-man/</guid>
       
         <description>&lt;p&gt;我很难想象一个追女生一年，被拒绝好几次，还依然爱着对方的深情男孩子。&lt;/p&gt;
 &lt;p&gt;在未来的某一天，碰到一个喜欢暗恋他很久的女孩子，女孩子向他表白了，他的第一个反应竟然是请给我发张你的色图，不发就分手，并且以各种色图各种疯狂发给对方，还说各种暧昧男女骚话。（他并未见到过这个女孩子，就只是网约云约炮）&lt;/p&gt;
@@ -66,10 +67,10 @@
     
     <item>
       <title>saintgirl</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://carrie999.github.io/about/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://carrie999.github.io/about/</guid>
       
         <description>&lt;p&gt;网名：漫长的海岸线/织雪纱奈/水玲珑/carrie/siantgirl&lt;/p&gt;
 &lt;p&gt;一名UI设计师和前端工程师，自学设计和前端，之前学了php, python, 去横店拍过戏，去大理做过义工。&lt;/p&gt;
@@ -84,11 +85,57 @@
     </item>
     
     <item>
+      <title>源码阅读篇章</title>
+      <link>https://carrie999.github.io/post/open-source-study/</link>
+      <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://carrie999.github.io/post/open-source-study/</guid>
+      
+        <description>&lt;h2 id=&#34;喜欢的-egoist-代码学习&#34;&gt;喜欢的 egoist 代码学习&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://bytedance.feishu.cn/docs/doccnPsquOewJCVXAGENOO1XWBb&#34; title=&#34;SAO 源码阅读&#34;&gt;SAO 源码阅读&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bytedance.feishu.cn/docs/doccnOadukROqZqGS9uOj6oGVzb&#34; title=&#34;POI 源码阅读&#34;&gt;POI 源码阅读&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bytedance.feishu.cn/docs/doccn0V0uCrooXhQTcLSEozEOue&#34; title=&#34;docute 分析阅读&#34;&gt;docute 分析阅读&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bytedance.feishu.cn/docs/doccn7jeqt2Fu5uJ09PyMjrg8sn&#34; title=&#34;tsup 学习解读&#34;&gt;tsup 学习解读&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bytedance.feishu.cn/docs/doccnGXJ38pNJCv7s9cUvfJ2IDd&#34; title=&#34;maho 分析阅读&#34;&gt;maho 分析阅读&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bytedance.feishu.cn/docs/doccnGNsuL9IGBXAllYbwYN6yyc&#34; title=&#34;这次我们来谈一谈快&#34;&gt;这次我们来谈一谈快&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://bytedance.feishu.cn/docs/doccn0ytgyPRFjgyNLgE6fC3K5c&#34; title=&#34;Vue3 源码 setup 线阅读分析&#34;&gt;Vue3 源码 setup 线阅读分析&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;虽然人生要谨言慎行，但是这次不怕了。&lt;/p&gt;
+&lt;p&gt;首先我对你没有恶意，只是很客观的公正评价，这只是我自己的一些想法，以及你的能力到底是什么水平。&lt;/p&gt;
+&lt;p&gt;你不是 tj 的弟弟，你的代码也不是。&lt;/p&gt;
+&lt;p&gt;首先你并不是很厉害。你很多代码都是参考了别人的代码，包括点赞最多的 saber 和 poi 。但是你很懂得在参考别人的代码上，稍微加上一些自己的想法，比如更简单，更少的配参数，更快的速度。
+你是代码拼装师，总是很熟悉其他的写的工具，然后把他们组装起来，成为自己的工具。你的那个 log工具，人家  tj 明明有一个，你非得自己写一个，写一个自己水平提升了，然后以后写代码就用自己的，说起来多么的光荣。就这样每天写一点，坚持个 5年，谁这么干谁水平高，别人在那里上班写业务，你在那里看别人的轮子，写轮子。然后对那些写业务的一脸鄙视，我在做喜欢的创作性的工作，你看你们 996 的傻缺，你看吧。我可以不去找对象，不买房，不就不用 996，你们去跳楼吧，balabala 的优越感。&lt;/p&gt;
+&lt;p&gt;我不觉得那些写业务的工作低人一等，他们每一天都在努力的活着，生存着，谁也不容易。每一天都在鼓励自己，去面对着残酷的世界。那些辛勤劳作的人真的也很棒的，你们自己请以你们自己为骄傲自豪。&lt;/p&gt;
+&lt;p&gt;再说说你的缺点。&lt;/p&gt;
+&lt;p&gt;你的点赞量也是遵循 8020原则，大部分的点赞都给了 20% 的项目。&lt;/p&gt;
+&lt;p&gt;你的项目太分散了，今天有兴趣写写 A 项目，明天有兴趣写写 B  项目，人只有把精力投放在最重要的代码上面才可以，就像 尤大把他的精力最后都投放在  vue 上。专注于一个，才能成功。&lt;/p&gt;
+&lt;p&gt;为啥你没成功，你的项目失败了，因为你看不到什么是项目的核心竞争力，你没有那个灵感给项目有让人惊艳，眼前一亮的功能。这是你所有的项目最失败的地方，我跟你说过一定要做差异化，你都不理我。&lt;/p&gt;
+&lt;p&gt;不够惊艳，就导致你的代码竞争对手太多，就没有用户量，于是就起不来。&lt;/p&gt;
+&lt;p&gt;其实有的东西你自己也知道，就愿意技痒，去写别人写过的东西。就纯粹是好玩而已。&lt;/p&gt;
+&lt;p&gt;再说说你的项目起名，就如同你本人一样，都很 SAO 。&lt;/p&gt;
+&lt;p&gt;说说黑客与画家，我不知道你看没看。&lt;/p&gt;
+&lt;p&gt;什么是黑客，就是那些创作者。我认为一个程序员能被称为创作者黑客都是很厉害的。而我认为你值得被称为一个黑客。你只是人品有点不好，但是并不妨碍你成为一个黑客。 黑客写代码就如同画画一样，写代码之前其实根本不知道写成的代码是什么样子的，通过参考别人的代码，填补自己的代码，今天填一点，明天填一点，于是伟大的项目就出来了。&lt;/p&gt;
+&lt;p&gt;我之所以画画，不止是因为这本黑客与画家，还因为月亮和六便士，因为动漫，因为某一个人，不是你哦，题外话了，以后说。&lt;/p&gt;
+&lt;p&gt;你不是很聪明，你只是一个很勤劳的学习者，知道自己喜欢的职业是什么，一个勤劳的黑客。&lt;/p&gt;
+&lt;p&gt;一年前我就知道你，我当时想这个人到底有多少时间写代码，当我知道你不工作的时候，我就瞬间明白了，大部分的人这么干他也行。不是很明白，你明明没有钱还花钱让别人给你修代码，我之前还以为你是一个财富自由的人，后来你还在寻求 sponsor  ，我就纳闷了，可能是太喜欢那个项目，必须要完善吧。不知道花钱请别人修代码是一种怎样的感受。&lt;/p&gt;
+&lt;p&gt;你能和尤雨溪理念不合，我觉得一定是你的错，不接受反驳。&lt;/p&gt;
+&lt;p&gt;代码如生命，兄弟如手足，女人如衣服，所以不能失去代码和朋友。&lt;/p&gt;
+&lt;p&gt;我也一样认为代码比对象重要，自己热爱的事情比对象重要百倍。&lt;/p&gt;
+&lt;p&gt;人太复杂了，你不知道我写这篇代码出于什么样的目的，只是单纯过过评论别人的瘾。我也不知道你会不会看，你是一种怎么的感受，是不是想顺着网线来打我之类的，千万别来打我，我给你发红包了。&lt;/p&gt;
+&lt;p&gt;写代码比和不正确的人谈恋爱简单一百倍。
+以上。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;尤雨溪写代码，我只能用一个词形容就是灵气，在一堆原有的框架里他能写出一个更好的框架把之前的都给干下去，在原本就有的博客文档框架里，觉得不舒服就自己捯饬一个，结果把其他的又干了下去，原本都有更多更快的工具启动，他自己写一个一下子带火这个工具，这让我想起了抖音和今日头条，在原本的视频领域和新闻领域做出一个新的，别人都无法比拟。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>https://carrie999.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 19 Feb 2021 17:58:40 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>https://carrie999.github.io/posts/my-first-post/</guid>
       
         <description></description>
       
@@ -96,10 +143,10 @@
     
     <item>
       <title>为啥不去日本</title>
-      <link>http://localhost:1313/post/japan/</link>
+      <link>https://carrie999.github.io/post/japan/</link>
       <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/japan/</guid>
+      <guid>https://carrie999.github.io/post/japan/</guid>
       
         <description>&lt;p&gt;leader今天问我你是不是也像郭大v那样移民日本，我说没钱。&lt;/p&gt;
 &lt;p&gt;我是一个很直的人，说到做到的人。&lt;/p&gt;
@@ -115,10 +162,10 @@
     
     <item>
       <title>你无需过于关心他人</title>
-      <link>http://localhost:1313/post/no-need/</link>
+      <link>https://carrie999.github.io/post/no-need/</link>
       <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/no-need/</guid>
+      <guid>https://carrie999.github.io/post/no-need/</guid>
       
         <description>&lt;p&gt;他们并不孤单，不要觉得对方孤单，对方孤单会来找你，会表达需求。而不需要你来做些什么，他需要你你就做，不需要就不过度关心。&lt;/p&gt;
 &lt;p&gt;无论是家人还是朋友都应当如此。&lt;/p&gt;
@@ -131,10 +178,10 @@
     
     <item>
       <title>告白与告别</title>
-      <link>http://localhost:1313/post/love-and-goodbye/</link>
+      <link>https://carrie999.github.io/post/love-and-goodbye/</link>
       <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/love-and-goodbye/</guid>
+      <guid>https://carrie999.github.io/post/love-and-goodbye/</guid>
       
         <description>&lt;p&gt;认识一个人，了解一个人，到最后告别一个人，对我来说真的是一个痛苦的过程。我总是希望自己尽量少地认识人，尽量少地把自己的喜怒哀乐都建立在其他个体身上。无论对感情和朋友都是如此……从小到大的很多经历告诉我，这个世界上，除了自己，除了至亲，没有人在乎你的痛苦。你能让大家高兴就行了，或者无感地存在也是个好方式。但你如果太在意自己的痛苦，或者太想让他人在意你的痛苦，只会让自己陷入被忽略的痛苦，甚至是表演痛苦的痛苦。 —《告白与告别》&lt;/p&gt;
 </description>
@@ -143,23 +190,23 @@
     
     <item>
       <title>喜欢一个人真的不是舔</title>
-      <link>http://localhost:1313/post/love-somebody/</link>
+      <link>https://carrie999.github.io/post/love-somebody/</link>
       <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/love-somebody/</guid>
+      <guid>https://carrie999.github.io/post/love-somebody/</guid>
       
-        <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/love1.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/image/love2.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&#34;https://carrie999.github.io/image/love1.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;
+&lt;img src=&#34;https://carrie999.github.io/image/love2.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;&lt;/p&gt;
 </description>
       
     </item>
     
     <item>
       <title>我对程序员的看法</title>
-      <link>http://localhost:1313/post/programmer/</link>
+      <link>https://carrie999.github.io/post/programmer/</link>
       <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/programmer/</guid>
+      <guid>https://carrie999.github.io/post/programmer/</guid>
       
         <description>&lt;p&gt;程序员最好的工作就是去做开源，尤其是赚钱的开源，是所有程序员最羡慕的。&lt;/p&gt;
 &lt;p&gt;但是开源程序有个悖论，就是一个开源项目可能被几万人使用，但是写这个项目的人只有几十人。就是开源项目不需要很多人。而且写完了后，会发现需要的人越来越少，只需要一个人半个人来维护就行了。&lt;/p&gt;
@@ -175,10 +222,10 @@
     
     <item>
       <title>关于自由职业的那些事儿</title>
-      <link>http://localhost:1313/post/freelancer/</link>
+      <link>https://carrie999.github.io/post/freelancer/</link>
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/freelancer/</guid>
+      <guid>https://carrie999.github.io/post/freelancer/</guid>
       
         <description>&lt;p&gt;一个人就是一支队伍，以前看到qq好友的签名，当时还不明白是什么意思。
 自由职业远离了公司和群体组织。
@@ -201,10 +248,10 @@
     
     <item>
       <title>那是一种很浪漫的单恋</title>
-      <link>http://localhost:1313/post/romantic/</link>
+      <link>https://carrie999.github.io/post/romantic/</link>
       <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/romantic/</guid>
+      <guid>https://carrie999.github.io/post/romantic/</guid>
       
         <description>&lt;p&gt;自己因为对方的冷暴力行为做了很多骚操作。&lt;/p&gt;
 &lt;p&gt;发了100次0.01 的红包，发了100美金红包，屏蔽github 之后再次申请小号sponsor ，申请4个twitter 小号，申请四五个tg小号，b站屏蔽，clubhouse屏蔽。&lt;/p&gt;
@@ -236,11 +283,11 @@
     </item>
     
     <item>
-      <title>我做UI设计的那些事儿，为啥从UI设计转行前端</title>
-      <link>http://localhost:1313/post/ui-designer/</link>
+      <title>我做 UI 设计的那些事儿，为啥从 UI 设计转行前端</title>
+      <link>https://carrie999.github.io/post/ui-designer/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/ui-designer/</guid>
+      <guid>https://carrie999.github.io/post/ui-designer/</guid>
       
         <description>&lt;p&gt;做UI设计我都换了4家公司，来北京的时候，一直在投简历连面试机会都很少。好不容易有面试机会也是失败。&lt;/p&gt;
 &lt;p&gt;其实我一直觉得UI设计也没啥，我们的简历作品几乎都长得一个样子，不就是底下五个icon然后有个主题色，面试主要还是在于吹，用户体验balabala之类的东西，我想那有啥好说的。也不是说你的色彩感好，画的漂亮就会要你。&lt;/p&gt;
@@ -256,10 +303,10 @@
     
     <item>
       <title>致最后的裙友</title>
-      <link>http://localhost:1313/post/last-group-friend/</link>
+      <link>https://carrie999.github.io/post/last-group-friend/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/last-group-friend/</guid>
+      <guid>https://carrie999.github.io/post/last-group-friend/</guid>
       
         <description>&lt;h2 id=&#34;致裙主&#34;&gt;致裙主&lt;/h2&gt;
 &lt;p&gt;我不能说你是个坏人，每个人内心都有光明和邪恶，一个坐牢杀人犯都在可能在特定场合去救落水的人。你在写代码创建自己的价值，你喜欢你的家人，你照顾你的朋友。但是你在处理他人感情事情上确实无能或者很怂。总是喜欢冷暴力和屏蔽他人。 暧昧后不理睬的方式有很多种，而冷暴力是最渣的一种。我不清楚以前喜欢你的嘉，你和她聊骚后，是怎样处理分手的事情的，以及她又是怎样离开裙的。但是在我这里冷暴力过不去。
@@ -326,10 +373,10 @@
     
     <item>
       <title>致渣男</title>
-      <link>http://localhost:1313/post/scumbag/</link>
+      <link>https://carrie999.github.io/post/scumbag/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/scumbag/</guid>
+      <guid>https://carrie999.github.io/post/scumbag/</guid>
       
         <description>&lt;p&gt;如果说渣女是只有利益没有道德的话，那么渣男就是只有色欲没有道德。&lt;/p&gt;
 &lt;p&gt;如果知道自己的好色，请远离好女孩，你们去搞av的女孩子啊，你去花钱叫🐔啊，非要和不搞性的女孩子搞黄色就是蠢了。&lt;/p&gt;
@@ -350,10 +397,10 @@
     
     <item>
       <title>2020总结</title>
-      <link>http://localhost:1313/post/2020/</link>
+      <link>https://carrie999.github.io/post/2020/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2020/</guid>
+      <guid>https://carrie999.github.io/post/2020/</guid>
       
         <description>&lt;p&gt;虽然都2月份了，看到别人都在总结2020
 我也像样的总结一下吧。
@@ -393,10 +440,10 @@
     
     <item>
       <title>关于人生这件事</title>
-      <link>http://localhost:1313/post/life/</link>
+      <link>https://carrie999.github.io/post/life/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/life/</guid>
+      <guid>https://carrie999.github.io/post/life/</guid>
       
         <description>&lt;p&gt;你拥有属于你的时间，你用这些时间可以去享受，去吃喝玩乐，去快乐。也可以用这些时间去做些事情，无论是创造些令自己和他人高兴的东西还是做些什么事情。&lt;/p&gt;
 &lt;p&gt;有钱会使你人生更为享受。&lt;/p&gt;
@@ -412,26 +459,26 @@
     
     <item>
       <title>有女朋友就是恋爱了吗？或者说没有男朋友就代表没有恋爱吗？</title>
-      <link>http://localhost:1313/post/true-love/</link>
+      <link>https://carrie999.github.io/post/true-love/</link>
       <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/true-love/</guid>
+      <guid>https://carrie999.github.io/post/true-love/</guid>
       
         <description>&lt;p&gt;不是的，我依然记得在大学时候，影视老师讲的话，她说，有一对少男少女在路上，结果后面还有一个女孩子，她的目光在看着那个男孩子。真正的爱情啊，管他有没有对象呢？当然也不是让你去做小三，就是你明知道无法在一起，你也依然喜欢他，就是这种感情。
 现在去相亲，都是一水的我在哪里毕业，然后再哪里工作，爱好是打游戏旅游追剧追番等直接的，然后再附上一张美颜照片，看得我都一脸懵逼。
 所以中学时期的爱情最美了，十八岁时最好的谈恋爱的年纪，只可惜都用来高考了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/love.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/image/love-text.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://carrie999.github.io/image/love.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;
+&lt;img src=&#34;https://carrie999.github.io/image/love-text.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;&lt;/p&gt;
 </description>
       
     </item>
     
     <item>
       <title>所谓的执着</title>
-      <link>http://localhost:1313/post/persistence/</link>
+      <link>https://carrie999.github.io/post/persistence/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/persistence/</guid>
+      <guid>https://carrie999.github.io/post/persistence/</guid>
       
         <description>&lt;p&gt;终于明白了自己的那种所谓的执着，那是深深的植根于童年的记忆。&lt;/p&gt;
 &lt;p&gt;初次进群的时候，我好羡慕你们可以有人说话啊。无论说什么我真的好羡慕。&lt;/p&gt;
@@ -450,24 +497,12 @@
     
     <item>
       <title>关于股票和爱情里的人性</title>
-      <link>http://localhost:1313/post/love-and-stock/</link>
+      <link>https://carrie999.github.io/post/love-and-stock/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/love-and-stock/</guid>
+      <guid>https://carrie999.github.io/post/love-and-stock/</guid>
       
-        <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/love-and-stock.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>原则</title>
-      <link>http://localhost:1313/post/stock/</link>
-      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/post/stock/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/stock.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&#34;https://carrie999.github.io/image/love-and-stock.jpeg&#34; alt=&#34;This is an image in static/image folder.&#34;&gt;&lt;/p&gt;
 </description>
       
     </item>

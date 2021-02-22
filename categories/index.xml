@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Saintgirl</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://carrie999.github.io/categories/</link>
     <description>Recent content in Categories on Saintgirl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 08 Feb 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carrie999.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>docs</title>
-      <link>http://localhost:1313/categories/docs/</link>
+      <link>https://carrie999.github.io/categories/docs/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/docs/</guid>
+      <guid>https://carrie999.github.io/categories/docs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>index</title>
-      <link>http://localhost:1313/categories/index/</link>
+      <link>https://carrie999.github.io/categories/index/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/index/</guid>
+      <guid>https://carrie999.github.io/categories/index/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>http://localhost:1313/categories/shortcodes/</link>
+      <link>https://carrie999.github.io/categories/shortcodes/</link>
       <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/categories/shortcodes/</guid>
+      <guid>https://carrie999.github.io/categories/shortcodes/</guid>
       <description></description>
     </item>
     

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>致最后的裙友 - Saintgirl</title>
+  <title>源码阅读篇章 - Saintgirl</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xianmin" />
-  <meta name="description" content="致裙主 我不能说你是个坏人，每个人内心都有光明和邪恶，一个坐牢杀人犯都在可能在特定场合去救落水的人。你在写代码创建自己的价值，你喜欢你的家人，" />
+  <meta name="description" content="喜欢的 egoist 代码学习 SAO 源码阅读 POI 源码阅读 docute 分析阅读 tsup 学习解读 maho 分析阅读 这次我们来谈一谈快 Vue3 源码 setup 线阅读分析 虽然人生要谨言慎行，但是这次不怕了。 首" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -35,7 +35,7 @@
 <meta name="generator" content="Hugo 0.72.0" />
 
 
-<link rel="canonical" href="https://carrie999.github.io/post/last-group-friend/" />
+<link rel="canonical" href="https://carrie999.github.io/post/open-source-study/" />
 
 
 
@@ -59,23 +59,23 @@
 
 
 
-<meta property="og:title" content="致最后的裙友" />
-<meta property="og:description" content="致裙主 我不能说你是个坏人，每个人内心都有光明和邪恶，一个坐牢杀人犯都在可能在特定场合去救落水的人。你在写代码创建自己的价值，你喜欢你的家人，" />
+<meta property="og:title" content="源码阅读篇章" />
+<meta property="og:description" content="喜欢的 egoist 代码学习 SAO 源码阅读 POI 源码阅读 docute 分析阅读 tsup 学习解读 maho 分析阅读 这次我们来谈一谈快 Vue3 源码 setup 线阅读分析 虽然人生要谨言慎行，但是这次不怕了。 首" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://carrie999.github.io/post/last-group-friend/" />
-<meta property="article:published_time" content="2021-02-08T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-02-08T00:00:00+00:00" />
-<meta itemprop="name" content="致最后的裙友">
-<meta itemprop="description" content="致裙主 我不能说你是个坏人，每个人内心都有光明和邪恶，一个坐牢杀人犯都在可能在特定场合去救落水的人。你在写代码创建自己的价值，你喜欢你的家人，">
-<meta itemprop="datePublished" content="2021-02-08T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-02-08T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="2459">
+<meta property="og:url" content="https://carrie999.github.io/post/open-source-study/" />
+<meta property="article:published_time" content="2021-02-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-22T00:00:00+00:00" />
+<meta itemprop="name" content="源码阅读篇章">
+<meta itemprop="description" content="喜欢的 egoist 代码学习 SAO 源码阅读 POI 源码阅读 docute 分析阅读 tsup 学习解读 maho 分析阅读 这次我们来谈一谈快 Vue3 源码 setup 线阅读分析 虽然人生要谨言慎行，但是这次不怕了。 首">
+<meta itemprop="datePublished" content="2021-02-22T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-02-22T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1624">
 
 
 
-<meta itemprop="keywords" content="preview,shortcodes,tag-6," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="致最后的裙友"/>
-<meta name="twitter:description" content="致裙主 我不能说你是个坏人，每个人内心都有光明和邪恶，一个坐牢杀人犯都在可能在特定场合去救落水的人。你在写代码创建自己的价值，你喜欢你的家人，"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="源码阅读篇章"/>
+<meta name="twitter:description" content="喜欢的 egoist 代码学习 SAO 源码阅读 POI 源码阅读 docute 分析阅读 tsup 学习解读 maho 分析阅读 这次我们来谈一谈快 Vue3 源码 setup 线阅读分析 虽然人生要谨言慎行，但是这次不怕了。 首"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -241,18 +241,13 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">致最后的裙友</h1>
+      <h1 class="post-title">源码阅读篇章</h1>
       
       <div class="post-meta">
-        <time datetime="2021-02-08" class="post-time">
-          2021-02-08
+        <time datetime="2021-02-22" class="post-time">
+          2021-02-22
         </time>
-        <div class="post-category">
-            <a href="https://carrie999.github.io/categories/docs/"> docs </a>
-            <a href="https://carrie999.github.io/categories/shortcodes/"> shortcodes </a>
-            <a href="https://carrie999.github.io/categories/index/"> index </a>
-            
-          </div>
+        
         
 
         
@@ -268,65 +263,41 @@
 
     
     <div class="post-content">
-      <h2 id="致裙主">致裙主</h2>
-<p>我不能说你是个坏人，每个人内心都有光明和邪恶，一个坐牢杀人犯都在可能在特定场合去救落水的人。你在写代码创建自己的价值，你喜欢你的家人，你照顾你的朋友。但是你在处理他人感情事情上确实无能或者很怂。总是喜欢冷暴力和屏蔽他人。 暧昧后不理睬的方式有很多种，而冷暴力是最渣的一种。我不清楚以前喜欢你的嘉，你和她聊骚后，是怎样处理分手的事情的，以及她又是怎样离开裙的。但是在我这里冷暴力过不去。
-我暗恋你两年了，我喜欢你是认真的。总算是有点良心，收到红包第一猜测是那个暗恋你的人发来的。
-看到你之后继续写代码，我真的很开心，很喜欢很喜欢很喜欢你代码的样子，总怕你没法挣到钱，所以就立马给你发红包拜年了。
-就是觉得你是个很美的人。可是人是复杂的，这就是读书的好处。也可能是你不怎么读书所无法理解的吧。
-你有一个很大的缺点就是高傲自大（可能是这么个形容词），从来不愿意低头，拉下脸面，学习成绩好总是去贬低学习成绩差的人。
-也许是你过去的教育你的生活环境也许是你的的内心人格等多重原因导致。但是内心本性占据很大一部分。</p>
-<p>我真的很想一直一直陪着你的。我真的也想过和你结婚生孩子了，连名字都想好了，不过我决定以后就为以后的孩子取名叫南宫半夏。我也决定要生一个可爱的小女孩。
-就算是你现在不喜欢我，以后也可能会喜欢我，就是你以后不喜欢我，不讨厌我也可以。
-你可以继续看你的动漫漫画色情图片，我都不拦着。你可以去追求你喜欢的女孩子，你追到了我就走，我甚至都可以去帮助你追她。在你有对象结婚之前，我都想一直陪着你。</p>
-<p>原来我错了，我和你畅享的是未来，你想的却是看对方的性感图和如何抛弃对方。
-杀害你的人，可能你的枕边人，是你最喜欢的人。
-当时离开裙之后，我真的想死去，还好没有死去。我怎么样其实都不会影响你，你依然会很快乐。
-你快乐就好，见到我喜欢的人快乐就好。我还喜欢自己，更希望自己快乐。</p>
-<p>我不想和你生孩子，你那么自私自大，我怕传染给孩子不好的性格。</p>
-<p>我一直都在为你的缺点说话，我始终都无法相信你是一个感情处理不好的人，我也始终无法相信你会冷暴力一个人，也始终无法相信我喜欢的人是一个渣男，一个感情里的渣男。
-男孩子看看色图怎么了，你真的很好性生活不乱等等。看吧看吧，我也喜欢看。</p>
-<p>不过渣男最容易招好女喜欢，渣男有让人喜欢的天赋，天生自带的忽冷忽热的pua 技术。我觉得你天生就带，薛之谦都能和前女友结婚，我觉得一定有下个好女孩喜欢你的，希望你在感情处理上能进步，而不是在原地踏步。不要辜负下一个喜欢你的人，哦，不，你要找个你喜欢但是她可能不喜欢你的。</p>
-<p>我喜欢喜欢你喜欢你喜欢你喜欢你喜欢你喜欢你喜欢你。
-觉得这是多么优秀的人生出的孩子，觉得能和他做朋友都很幸福，觉得能和他见面都很幸福。</p>
-<p>看到你的冷暴力态度。和对其他女推友的暧昧态度。
-我才知道这原来是感情里的怂包啊。原来知人知面不知心就是这样的人啊。原来人还可以这样。</p>
-<p>我不暗恋你了，我不暗恋你了，我不暗恋你了，我不暗恋你了。
-我眼瞎我眼瞎我眼瞎，我活该我活该我活该，我要向世界大声宣告。</p>
-<p>好多明星不也有出轨离婚新闻吗，我终于相信我碰到了渣男，老虎不也有眼瞎的时候吗。</p>
-<p>成功人士不只是事业成功，在感情处理上也一定会很好。而你并不能在感情上处理很好。</p>
-<p>以前根本不去写文，如今暗恋下，我快成作家了，我的写文的感觉真的是薄发在涌动澎湃，觉得几万字都不够我写的。</p>
-<p>如今我放在 github 的issue，爱真的是要海枯石烂了呢。</p>
-<p>最后的最后，我曾经真的真的很喜欢很喜欢你。
-我不后悔我曾经喜欢过你。</p>
-<p>我喜欢林志颖，可是当我知道他做假之后，我便不再去关注他。
-在过去两年的时间里，你一直是我生命里的光，我给你发过柯南的一个插曲，那是你在我心里的感觉，你什么也没有反应，可能听也没有听过。我暗恋了你两年，如今，我觉得这光可以换换了。</p>
-<p>再见我的梦醒了，希望你早日成功取个漂亮妻子，人生赢家，跟你发了那么多都不理我，我早该醒了。
-男女喜欢没了，只是普通朋友的喜欢啦，好好敲代码，争取超过yyx。
-你和你的女推友，动漫色情恩爱去吧。希望你又有色情又开心，也希望你能早日移民。
-昨天的1000元红包不需要回报，继续做你自己就可以。
-一直不是很明白，为啥一直屏蔽。
-我觉得我不该打扰别人，但是这事我还是得当个面说清楚，发邮件怕你看不到。
-我眼瞎，我眼瞎，我眼瞎。我活该我活该我活该。
-不过我还是决定去找你玩，见不见都无所谓。</p>
-<p>她那时候还太年轻，不知道所有命运赠送的礼物，早已在暗中标好了价格。</p>
-<p>人和人见面，一开始的时候总是虚伪新鲜而又浪漫。我听懂了所有的悲伤情歌。如今再听已是伤心人。
-我要和其他推友恩爱去了，我本来今年想和你做个好朋友的，但是我觉得以你的冷暴咯态度，可能性不大，所以我决定换一个目标，我要和尤雨溪做好朋友，我要和TJ做好朋友，我要和写代码最厉害的人做好朋友。我要和写代码最厉害的人一起敲代码。我想去见见尤雨溪，像二姐一样然后要个拥抱，如此便心满意足。（yyx为我点赞）</p>
-<p>本来觉得以后不恋爱了呢，可我觉得对我的粉丝不公平，我要去临幸我的粉丝了或者我去和其他我敬仰和喜欢的人去恋爱。我可以去和很多人恋爱。不再执着于一次不好的恋爱上。</p>
-<p>每个人人生只有百年不到，以后死去的时候回想起来，我写过很多有用的代码，喜欢过色情图，喜欢哪个美女。但是唯独不会感慨我曾经伤害过喜欢过我的人。
-曾经有个女孩子很喜欢很喜欢很喜欢你。</p>
-<p>你们去玩弄女性吧，去做女装大佬吧。</p>
-<h2 id="致geekplus">致geekplus</h2>
-<p>我接受你的道歉，我知道他是你好朋友，但是你一定不希望自己的女孩嫁给他，但是你们依然是朋友。依然可以谈笑风生，互相调侃。
-我看到你的那个远程工作的博客真的很有用，看到你在学习源码也真的觉得你真棒，我把你当朋友。
-永远拉黑</p>
-<h2 id="致-randy">致 randy</h2>
-<p>我把你当朋友，也真的喜欢热爱代码的人，大佬，希望你代码早日有所成就。</p>
-<h2 id="胖哥">胖哥</h2>
-<p>欺负人看人笑话好玩吗</p>
-<p>十男九色，其中一个巨色，希望你们交流色情愉快，交流代码快乐。</p>
-<p>谁都有被踢群的经历，我想能洋洋洒洒的写一篇被踢群的文的不多吧。
-对了如果裙放开了，我还会申请小号偷偷进去的，所以千万别被我知道。</p>
-<p>如此，致敬被踢群两次的好裙和好裙友。</p>
+      <h2 id="喜欢的-egoist-代码学习">喜欢的 egoist 代码学习</h2>
+<p><a href="https://bytedance.feishu.cn/docs/doccnPsquOewJCVXAGENOO1XWBb" title="SAO 源码阅读">SAO 源码阅读</a></p>
+<p><a href="https://bytedance.feishu.cn/docs/doccnOadukROqZqGS9uOj6oGVzb" title="POI 源码阅读">POI 源码阅读</a></p>
+<p><a href="https://bytedance.feishu.cn/docs/doccn0V0uCrooXhQTcLSEozEOue" title="docute 分析阅读">docute 分析阅读</a></p>
+<p><a href="https://bytedance.feishu.cn/docs/doccn7jeqt2Fu5uJ09PyMjrg8sn" title="tsup 学习解读">tsup 学习解读</a></p>
+<p><a href="https://bytedance.feishu.cn/docs/doccnGXJ38pNJCv7s9cUvfJ2IDd" title="maho 分析阅读">maho 分析阅读</a></p>
+<p><a href="https://bytedance.feishu.cn/docs/doccnGNsuL9IGBXAllYbwYN6yyc" title="这次我们来谈一谈快">这次我们来谈一谈快</a></p>
+<p><a href="https://bytedance.feishu.cn/docs/doccn0ytgyPRFjgyNLgE6fC3K5c" title="Vue3 源码 setup 线阅读分析">Vue3 源码 setup 线阅读分析</a></p>
+<hr>
+<p>虽然人生要谨言慎行，但是这次不怕了。</p>
+<p>首先我对你没有恶意，只是很客观的公正评价，这只是我自己的一些想法，以及你的能力到底是什么水平。</p>
+<p>你不是 tj 的弟弟，你的代码也不是。</p>
+<p>首先你并不是很厉害。你很多代码都是参考了别人的代码，包括点赞最多的 saber 和 poi 。但是你很懂得在参考别人的代码上，稍微加上一些自己的想法，比如更简单，更少的配参数，更快的速度。
+你是代码拼装师，总是很熟悉其他的写的工具，然后把他们组装起来，成为自己的工具。你的那个 log工具，人家  tj 明明有一个，你非得自己写一个，写一个自己水平提升了，然后以后写代码就用自己的，说起来多么的光荣。就这样每天写一点，坚持个 5年，谁这么干谁水平高，别人在那里上班写业务，你在那里看别人的轮子，写轮子。然后对那些写业务的一脸鄙视，我在做喜欢的创作性的工作，你看你们 996 的傻缺，你看吧。我可以不去找对象，不买房，不就不用 996，你们去跳楼吧，balabala 的优越感。</p>
+<p>我不觉得那些写业务的工作低人一等，他们每一天都在努力的活着，生存着，谁也不容易。每一天都在鼓励自己，去面对着残酷的世界。那些辛勤劳作的人真的也很棒的，你们自己请以你们自己为骄傲自豪。</p>
+<p>再说说你的缺点。</p>
+<p>你的点赞量也是遵循 8020原则，大部分的点赞都给了 20% 的项目。</p>
+<p>你的项目太分散了，今天有兴趣写写 A 项目，明天有兴趣写写 B  项目，人只有把精力投放在最重要的代码上面才可以，就像 尤大把他的精力最后都投放在  vue 上。专注于一个，才能成功。</p>
+<p>为啥你没成功，你的项目失败了，因为你看不到什么是项目的核心竞争力，你没有那个灵感给项目有让人惊艳，眼前一亮的功能。这是你所有的项目最失败的地方，我跟你说过一定要做差异化，你都不理我。</p>
+<p>不够惊艳，就导致你的代码竞争对手太多，就没有用户量，于是就起不来。</p>
+<p>其实有的东西你自己也知道，就愿意技痒，去写别人写过的东西。就纯粹是好玩而已。</p>
+<p>再说说你的项目起名，就如同你本人一样，都很 SAO 。</p>
+<p>说说黑客与画家，我不知道你看没看。</p>
+<p>什么是黑客，就是那些创作者。我认为一个程序员能被称为创作者黑客都是很厉害的。而我认为你值得被称为一个黑客。你只是人品有点不好，但是并不妨碍你成为一个黑客。 黑客写代码就如同画画一样，写代码之前其实根本不知道写成的代码是什么样子的，通过参考别人的代码，填补自己的代码，今天填一点，明天填一点，于是伟大的项目就出来了。</p>
+<p>我之所以画画，不止是因为这本黑客与画家，还因为月亮和六便士，因为动漫，因为某一个人，不是你哦，题外话了，以后说。</p>
+<p>你不是很聪明，你只是一个很勤劳的学习者，知道自己喜欢的职业是什么，一个勤劳的黑客。</p>
+<p>一年前我就知道你，我当时想这个人到底有多少时间写代码，当我知道你不工作的时候，我就瞬间明白了，大部分的人这么干他也行。不是很明白，你明明没有钱还花钱让别人给你修代码，我之前还以为你是一个财富自由的人，后来你还在寻求 sponsor  ，我就纳闷了，可能是太喜欢那个项目，必须要完善吧。不知道花钱请别人修代码是一种怎样的感受。</p>
+<p>你能和尤雨溪理念不合，我觉得一定是你的错，不接受反驳。</p>
+<p>代码如生命，兄弟如手足，女人如衣服，所以不能失去代码和朋友。</p>
+<p>我也一样认为代码比对象重要，自己热爱的事情比对象重要百倍。</p>
+<p>人太复杂了，你不知道我写这篇代码出于什么样的目的，只是单纯过过评论别人的瘾。我也不知道你会不会看，你是一种怎么的感受，是不是想顺着网线来打我之类的，千万别来打我，我给你发红包了。</p>
+<p>写代码比和不正确的人谈恋爱简单一百倍。
+以上。</p>
+<hr>
+<p>尤雨溪写代码，我只能用一个词形容就是灵气，在一堆原有的框架里他能写出一个更好的框架把之前的都给干下去，在原本就有的博客文档框架里，觉得不舒服就自己捯饬一个，结果把其他的又干了下去，原本都有更多更快的工具启动，他自己写一个一下子带火这个工具，这让我想起了抖音和今日头条，在原本的视频领域和新闻领域做出一个新的，别人都无法比拟。</p>
 
     </div>
 
@@ -340,7 +311,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-      2021-02-08
+      2021-02-22
       
     </span>
   </p>
@@ -356,17 +327,12 @@
     
 
     <footer class="post-footer">
-      <div class="post-tags">
-          <a href="https://carrie999.github.io/tags/preview/">preview</a>
-          <a href="https://carrie999.github.io/tags/shortcodes/">shortcodes</a>
-          <a href="https://carrie999.github.io/tags/tag-6/">tag-6</a>
-          
-        </div>
+      
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/ui-designer/">
+          <a class="prev" href="/post/code-man/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -376,12 +342,12 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">我做 UI 设计的那些事儿，为啥从 UI 设计转行前端</span>
+            <span class="prev-text nav-default">再一次评价 egoist 的冷暴力行为</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/scumbag/">
-            <span class="next-text nav-default">致渣男</span>
+          <a class="next" href="/post/japan/">
+            <span class="next-text nav-default">为啥不去日本</span>
             <span class="prev-text nav-mobile">Next</span>
             
             <i class="iconfont">
