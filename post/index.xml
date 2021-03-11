@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Saintgirl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://carrie999.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,6 +27,15 @@
       
       <guid>https://carrie999.github.io/post/code-man/</guid>
       <description>我很难想象一个追女生一年，被拒绝好几次，还依然爱着对方的深情男孩子。 在未来的某一天，碰到一个喜欢暗恋他很久的女孩子，女孩子向他表白了，他的第</description>
+    </item>
+    
+    <item>
+      <title>你无需忧虑</title>
+      <link>https://carrie999.github.io/post/no-worry/</link>
+      <pubDate>Thu, 11 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://carrie999.github.io/post/no-worry/</guid>
+      <description>你有一份工作 一份收入还不错的工作，别人还很羡慕的工作。多工作几年可以在小城市或者出国买个房子。 你有很多好朋友 他们都在和你一起并肩着，一起经历</description>
     </item>
     
     <item>
@@ -180,15 +189,6 @@
       
       <guid>https://carrie999.github.io/post/ui-designer/</guid>
       <description>做UI设计我都换了4家公司，来北京的时候，一直在投简历连面试机会都很少。好不容易有面试机会也是失败。 其实我一直觉得UI设计也没啥，我们的简历</description>
-    </item>
-    
-    <item>
-      <title>致最后的裙友</title>
-      <link>https://carrie999.github.io/post/last-group-friend/</link>
-      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://carrie999.github.io/post/last-group-friend/</guid>
-      <description>致裙主 我不能说你是个坏人，每个人内心都有光明和邪恶，一个坐牢杀人犯都在可能在特定场合去救落水的人。你在写代码创建自己的价值，你喜欢你的家人，</description>
     </item>
     
   </channel>
