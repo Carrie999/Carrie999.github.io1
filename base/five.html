@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>从一个无序，不相等的数组中，选取N个数，使其和为M实现算法(javascript实现) | 个人主页</title>
+    <meta name="description" content="一个互联网全才妹子，会设计，会前端，会后端，还会视频动效，好像并没有什么卵用。。。。。。。">
+    
+    
+    <link rel="preload" href="/assets/css/styles.7c3952a2.css" as="style"><link rel="preload" href="/assets/js/app.7c3952a2.js" as="script"><link rel="preload" href="/assets/js/5.721edcb6.js" as="script"><link rel="prefetch" href="/assets/css/1.styles.2558fb4e.css"><link rel="prefetch" href="/assets/css/2.styles.a2bd3099.css"><link rel="prefetch" href="/assets/js/1.2558fb4e.js"><link rel="prefetch" href="/assets/js/10.c14929ea.js"><link rel="prefetch" href="/assets/js/11.ce867d13.js"><link rel="prefetch" href="/assets/js/12.2437ab26.js"><link rel="prefetch" href="/assets/js/13.d23bcf5c.js"><link rel="prefetch" href="/assets/js/14.4e23b722.js"><link rel="prefetch" href="/assets/js/15.d5069811.js"><link rel="prefetch" href="/assets/js/16.3fded6ad.js"><link rel="prefetch" href="/assets/js/17.35b14bd9.js"><link rel="prefetch" href="/assets/js/2.a2bd3099.js"><link rel="prefetch" href="/assets/js/3.d8ee78a7.js"><link rel="prefetch" href="/assets/js/4.5c698120.js"><link rel="prefetch" href="/assets/js/6.24996ade.js"><link rel="prefetch" href="/assets/js/7.6f0d51af.js"><link rel="prefetch" href="/assets/js/8.6365b6dc.js"><link rel="prefetch" href="/assets/js/9.f6335daa.js">
+    <link rel="stylesheet" href="/assets/css/1.styles.2558fb4e.css"><link rel="stylesheet" href="/assets/css/2.styles.a2bd3099.css"><link rel="stylesheet" href="/assets/css/styles.7c3952a2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人主页</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/home/" class="nav-link">vue源码解读</a></div><div class="nav-item"><a href="/base/" class="nav-link router-link-active">JS基础</a></div><div class="nav-item"><a href="/interview/" class="nav-link">面试题</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/essay/" class="nav-link">随想</a></li><li class="dropdown-item"><!----> <a href="https://saintgirl.zcool.com.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  设计
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Carrie999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/home/" class="nav-link">vue源码解读</a></div><div class="nav-item"><a href="/base/" class="nav-link router-link-active">JS基础</a></div><div class="nav-item"><a href="/interview/" class="nav-link">面试题</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/essay/" class="nav-link">随想</a></li><li class="dropdown-item"><!----> <a href="https://saintgirl.zcool.com.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  设计
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Carrie999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>JS基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/" class="sidebar-link">谈一谈节流和防抖</a></li><li><a href="/base/two.html" class="sidebar-link">js reduce sort 排序</a></li><li><a href="/base/three.html" class="sidebar-link">手写bind的 Polyfill</a></li><li><a href="/base/four.html" class="sidebar-link">前端api笔记整理合集</a></li><li><a href="/base/five.html" class="active sidebar-link">从一个无序，不相等的数组中，选取N个数，使其和为M实现算法(javascript实现)</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><p></p><div class="table-of-contents"><ul></ul></div><p></p> <h1 id="从一个无序，不相等的数组中，选取n个数，使其和为m实现算法-javascript实现"><a href="#从一个无序，不相等的数组中，选取n个数，使其和为m实现算法-javascript实现" aria-hidden="true" class="header-anchor">#</a> 从一个无序，不相等的数组中，选取N个数，使其和为M实现算法(javascript实现)</h1> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">getCombBySum</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span>sum<span class="token punctuation">,</span>tolerance<span class="token punctuation">,</span>targetCount<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> util <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">/*
+      get combination from array
+      arr: target array
+      num: combination item length
+      return: one array that contain combination arrays
+    */</span>
+    
+    <span class="token comment">/*获取所有的可能组合
+    如果是[1,2,3,4,5]取出3个 
+    那么可能性就有10种 C(5,3)= C(5,2) 不懂的恶补高二数学排列😄
+    不用翻书了 给个公式 
+    全排列  P(n,m)=n!/(n-m)!
+    组合排列 C(5,2)=5!/2!*3!=5*4*3*2*1/[(2*1)*(3*2*1)]=10
+    这是使用了循环加递归做出了组合排序
+    */</span>
+    getCombination<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>arr<span class="token punctuation">,</span> num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> r<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span>t<span class="token punctuation">,</span>a<span class="token punctuation">,</span>n<span class="token punctuation">)</span>
+      <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>n<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span>
+          <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> r<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+          <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>l<span class="token operator">=</span>a<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">&lt;=</span>l<span class="token operator">-</span>n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+          <span class="token punctuation">{</span>
+              <span class="token function">f</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> a<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>arr<span class="token punctuation">,</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> r<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//take array index to a array</span>
+    <span class="token comment">// 获取数组的索引</span>
+    getArrayIndex<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        r <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>array<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        r<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      
+      <span class="token keyword">return</span> r<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>logic <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">//sort the array,then get what's we need</span>
+    <span class="token comment">// 获取数组中比sum小的</span>
+    init<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span>sum<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">//clone array</span>
+      <span class="token keyword">var</span> _array <span class="token operator">=</span> array<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      r <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+      <span class="token comment">//sort by asc</span>
+      _array<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> a <span class="token operator">-</span> b<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//get all number when it's less than or equal sum</span>
+      <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>_array<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>_array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">&lt;=</span>sum<span class="token punctuation">)</span><span class="token punctuation">{</span>
+          r<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>_array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+          <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+      
+      <span class="token keyword">return</span> r<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">//important function</span>
+    core<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span>sum<span class="token punctuation">,</span>arrayIndex<span class="token punctuation">,</span>count<span class="token punctuation">,</span>r<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        combArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        _sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        _cca <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        _cache <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      
+      <span class="token keyword">if</span><span class="token punctuation">(</span>count <span class="token operator">==</span> _returnMark<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">//get current count combination</span>
+      combArray <span class="token operator">=</span> util<span class="token punctuation">.</span><span class="token function">getCombination</span><span class="token punctuation">(</span>arrayIndex<span class="token punctuation">,</span>count<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>combArray<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        _cca <span class="token operator">=</span> combArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        _sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        _cache <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token comment">//calculate the sum from combination</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>k<span class="token operator">&lt;</span>_cca<span class="token punctuation">.</span>length<span class="token punctuation">;</span>k<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          _sum <span class="token operator">+=</span> array<span class="token punctuation">[</span>_cca<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+          _cache<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>_cca<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>_sum<span class="token operator">-</span>sum<span class="token punctuation">)</span> <span class="token operator">&lt;=</span> _tolerance<span class="token punctuation">)</span><span class="token punctuation">{</span>
+          r<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>_cache<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>      
+      <span class="token punctuation">}</span>
+      
+      logic<span class="token punctuation">.</span><span class="token function">core</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span>sum<span class="token punctuation">,</span>arrayIndex<span class="token punctuation">,</span>count<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    r <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    _array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    _targetCount <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    _tolerance <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    _returnMark <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  
+  <span class="token comment">//check data</span>
+  _targetCount <span class="token operator">=</span> targetCount <span class="token operator">||</span> _targetCount<span class="token punctuation">;</span>
+  _tolerance <span class="token operator">=</span> tolerance <span class="token operator">||</span> _tolerance<span class="token punctuation">;</span>
+  
+  _array <span class="token operator">=</span> logic<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span>sum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>_targetCount<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    _returnMark <span class="token operator">=</span> _targetCount<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  
+  logic<span class="token punctuation">.</span><span class="token function">core</span><span class="token punctuation">(</span>_array<span class="token punctuation">,</span>sum<span class="token punctuation">,</span>util<span class="token punctuation">.</span><span class="token function">getArrayIndex</span><span class="token punctuation">(</span>_array<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>_targetCount <span class="token operator">||</span> _array<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">,</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token keyword">return</span> r<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/base/four.html" class="prev">
+          前端api笔记整理合集
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/assets/js/5.721edcb6.js" defer></script><script src="/assets/js/app.7c3952a2.js" defer></script>
+  </body>
+</html>

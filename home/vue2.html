@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2.vue双向数据绑定原理 | 个人主页</title>
+    <meta name="description" content="一个互联网全才妹子，会设计，会前端，会后端，还会视频动效，好像并没有什么卵用。。。。。。。">
+    
+    
+    <link rel="preload" href="/assets/css/styles.7c3952a2.css" as="style"><link rel="preload" href="/assets/js/app.7c3952a2.js" as="script"><link rel="preload" href="/assets/js/11.ce867d13.js" as="script"><link rel="prefetch" href="/assets/css/1.styles.2558fb4e.css"><link rel="prefetch" href="/assets/css/2.styles.a2bd3099.css"><link rel="prefetch" href="/assets/js/1.2558fb4e.js"><link rel="prefetch" href="/assets/js/10.c14929ea.js"><link rel="prefetch" href="/assets/js/12.2437ab26.js"><link rel="prefetch" href="/assets/js/13.d23bcf5c.js"><link rel="prefetch" href="/assets/js/14.4e23b722.js"><link rel="prefetch" href="/assets/js/15.d5069811.js"><link rel="prefetch" href="/assets/js/16.3fded6ad.js"><link rel="prefetch" href="/assets/js/17.35b14bd9.js"><link rel="prefetch" href="/assets/js/2.a2bd3099.js"><link rel="prefetch" href="/assets/js/3.d8ee78a7.js"><link rel="prefetch" href="/assets/js/4.5c698120.js"><link rel="prefetch" href="/assets/js/5.721edcb6.js"><link rel="prefetch" href="/assets/js/6.24996ade.js"><link rel="prefetch" href="/assets/js/7.6f0d51af.js"><link rel="prefetch" href="/assets/js/8.6365b6dc.js"><link rel="prefetch" href="/assets/js/9.f6335daa.js">
+    <link rel="stylesheet" href="/assets/css/1.styles.2558fb4e.css"><link rel="stylesheet" href="/assets/css/2.styles.a2bd3099.css"><link rel="stylesheet" href="/assets/css/styles.7c3952a2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">个人主页</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/home/" class="nav-link router-link-active">vue源码解读</a></div><div class="nav-item"><a href="/base/" class="nav-link">JS基础</a></div><div class="nav-item"><a href="/interview/" class="nav-link">面试题</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/essay/" class="nav-link">随想</a></li><li class="dropdown-item"><!----> <a href="https://saintgirl.zcool.com.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  设计
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Carrie999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="/home/" class="nav-link router-link-active">vue源码解读</a></div><div class="nav-item"><a href="/base/" class="nav-link">JS基础</a></div><div class="nav-item"><a href="/interview/" class="nav-link">面试题</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">博文</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/essay/" class="nav-link">随想</a></li><li class="dropdown-item"><!----> <a href="https://saintgirl.zcool.com.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  设计
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/Carrie999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Vue源码解析</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/home/" class="sidebar-link">1.模版渲染</a></li><li><a href="/home/vue2.html" class="active sidebar-link">2.vue双向数据绑定原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/home/vue2.html#现代-js-框架存在的根本原因" class="sidebar-link">现代 js 框架存在的根本原因</a></li><li class="sidebar-sub-header"><a href="/home/vue2.html#数据劫持结合发布者-订阅者模式" class="sidebar-link">数据劫持结合发布者-订阅者模式</a></li></ul></li><li><a href="/home/vue3.html" class="sidebar-link">3.AST到VNode过程</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Vuex源码解析</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/home/vuex.html" class="sidebar-link">Vuex 2.0 源码解读</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><p></p><div class="table-of-contents"><ul><li><a href="#现代-js-框架存在的根本原因">现代 js 框架存在的根本原因</a></li><li><a href="#数据劫持结合发布者-订阅者模式">数据劫持结合发布者-订阅者模式</a></li></ul></div><p></p> <h1 id="_2-vue双向数据绑定原理"><a href="#_2-vue双向数据绑定原理" aria-hidden="true" class="header-anchor">#</a> 2.vue双向数据绑定原理</h1> <h2 id="现代-js-框架存在的根本原因"><a href="#现代-js-框架存在的根本原因" aria-hidden="true" class="header-anchor">#</a> <strong>现代 js 框架存在的根本原因</strong></h2> <p>然而通常人们（自以为）使用框架是因为：
+它们支持组件化；
+它们有强大的社区支持；
+它们有很多（基于框架的）第三方库来解决问题；
+它们有很多（很好的）第三方组件;
+它们有浏览器扩展工具来帮助调试；
+它们适合做单页应用。</p> <p><strong>Keeping the UI in sync with the state is hard (UI与状态同步非常困难)</strong>
+通过（添加）观察者监测变化，如 Angular 和 Vue.js。应用中状态的属性会被监测，当它们发生变化时，只有依赖了（发生变化）属性的 DOM 元素会被重新渲染。</p> <h2 id="数据劫持结合发布者-订阅者模式"><a href="#数据劫持结合发布者-订阅者模式" aria-hidden="true" class="header-anchor">#</a> 数据劫持结合发布者-订阅者模式</h2> <p><strong>1.属性拦截器-初步数据劫持</strong></p> <p>Object.defineProperty()</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  enumerable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  configurable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token keyword">set</span> <span class="token punctuation">(</span>newValue<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'set'</span><span class="token punctuation">)</span>
+    value <span class="token operator">=</span> newValue
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">get</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'get'</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> value
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+value <span class="token operator">=</span> a<span class="token punctuation">.</span>b
+a<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">1</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>b<span class="token punctuation">)</span>
+</code></pre></div><p>读a.b或者设置a.b时候触发get和set函数
+configurable如果为false,那么不可以修改, 不可以删除.
+writable给的说明是如果设置为false,不可以采用 数据运算符,进行赋值</p> <p><strong>2.想实现一个这样的功能</strong></p> <p>当我们试图修改 a 的值时：ins.a = 2，在控制台将会打印 '修改了 a’,
+乍一看比较简单
+考虑到复杂情况,
+比如如何避免收集重复的依赖，如何深度观测，如何处理数组以及其他边界条件等等</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> ins <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+ins<span class="token punctuation">.</span><span class="token function">$watch</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'修改了 a'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p><strong>3.收集依赖, 起码需要一个”筐“</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// dep 数组就是我们所谓的“筐”</span>
+<span class="token keyword">const</span> dep <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token keyword">set</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当属性被设置的时候，将“筐”里的依赖都执行一次</span>
+    dep<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>fn <span class="token operator">=&gt;</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">get</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当属性被获取的时候，把依赖放到“筐”里</span>
+    dep<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>fn<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token function">$watch</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'设置了 a'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p><strong>4.$watch 函数是知道当前正在观测的是哪一个字段的</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token punctuation">{</span>
+  a<span class="token punctuation">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> dep <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token keyword">set</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    dep<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>fn <span class="token operator">=&gt;</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token keyword">get</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 此时 Target 变量中保存的就是依赖函数</span>
+    dep<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>Target<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// Target 是全局变量</span>
+<span class="token keyword">let</span> Target <span class="token operator">=</span> <span class="token keyword">null</span>
+<span class="token keyword">function</span> <span class="token function">$watch</span> <span class="token punctuation">(</span>exp<span class="token punctuation">,</span> fn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 将 Target 的值设置为 fn</span>
+  Target <span class="token operator">=</span> fn
+  <span class="token comment">// 读取字段值，触发 get 函数</span>
+  data<span class="token punctuation">[</span>exp<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>明白数据响应系统的整体思路,为接下来真正进入 Vue 源码做必要的铺垫</p> <p><strong>4.observer</strong></p> <p>observe工厂函数</p> <div class="language-js extra-class"><pre class="language-js"><code>    <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token punctuation">{</span>
+      a<span class="token punctuation">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token punctuation">{</span>
+      a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token comment">// __ob__ 是不可枚举的属性</span>
+      __ob__<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        value<span class="token punctuation">:</span> data<span class="token punctuation">,</span> <span class="token comment">// value 属性指向 data 数据对象本身，这是一个循环引用</span>
+        dep<span class="token punctuation">:</span> dep实例对象<span class="token punctuation">,</span> <span class="token comment">// new Dep()</span>
+        vmCount<span class="token punctuation">:</span> <span class="token number">0</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>new Observer(data)</p> <p>Observer构造函数-调用this.walk(value)-defineReactive(get和set)</p> <p>get 调用 dep.depend()  在 get 函数中如何收集依赖</p> <p>set 调用 dep.notify()   通知更新</p> <p><strong>5.dep</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">static</span> target<span class="token punctuation">;</span>  <span class="token comment">// watcher</span>
+id<span class="token punctuation">;</span>     <span class="token comment">//记录id不能重复收集</span>
+subs<span class="token punctuation">;</span>    <span class="token comment">//数组,sub收集所以的watcher</span>
+</code></pre></div><p>dep.notify()实际上是 watcher里的update() 渲染更新
+dep.depend()实际上是 watcher里的update() 渲染更新  把watcher实例对象推入subs</p> <p><strong>6.watcher</strong>
+vm, vue实例对象
+expOrFn, 表达式
+cb, 回调函数</p> <p>当然还在vm上定义了很多其他的computer,watch之类的
+收集依赖,要想收集,必须 new watcher()</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">get</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token function">pushTarget</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">addDep</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   dep<span class="token punctuation">.</span><span class="token function">addSub</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>  <span class="token comment">// 把watcher自己加入dep.subs数组</span>
+<span class="token punctuation">}</span>
+<span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token function">queueWatcher</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">//排队渲染</span>
+<span class="token punctuation">}</span> 
+</code></pre></div><p><strong>6.总结</strong> <img src="https://image-static.segmentfault.com/115/842/1158420349-5b8e2aa1e0d39_articlex" alt="图片描述"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/home/" class="prev router-link-active">
+          1.模版渲染
+        </a></span> <span class="next"><a href="/home/vue3.html">
+          3.AST到VNode过程
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/11.ce867d13.js" defer></script><script src="/assets/js/app.7c3952a2.js" defer></script>
+  </body>
+</html>
